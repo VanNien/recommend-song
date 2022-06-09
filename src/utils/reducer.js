@@ -10,7 +10,7 @@ export const initialState = {
   selectedPlaylistId: "1Yuhd6pRezxQ5KfC0FAOG4",
   stateClick: false,
   selectListTrackFavorite: null,
-  recommned_tracks: null,
+
 };
 
 const reducer = (state, action) => {
@@ -60,11 +60,7 @@ const reducer = (state, action) => {
         ...state,
         selectListTrackFavorite: action.selectListTrackFavorite,
       };
-    case reducerCases.SET_RECOMMEND:
-      return {
-        ...state,
-        recommned_tracks: action.recommned_tracks,
-      };    
+   
     default:
       return state;
   }
