@@ -1,70 +1,90 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# MusicRecomenderSystem_Flask
+- Music Recommender System Server Using Flask
+- Using Spotify API
+- Using this link for get information song with id: https://developer.spotify.com/console/get-track/?id=6JVy1PrxgvsljjACUupfQ5&market=
+- Link Colab: https://colab.research.google.com/drive/1NKXIiSKFi5rnvPuHTjDc9n5KvpmmP7_E?usp=sharing
+- Link tutorial: https://towardsdatascience.com/how-to-build-an-amazing-music-recommendation-system-4cce2719a572
+#### Request Data Example: [{
+		"name": "I Don't Think I'm Okay",
+		"year": 2020
+	},
+	{
+		"name": "Do It To My Heart",
+		"year": 2022
+	},
+	{
+		"name": "Soda (feat. Take A Daytrip)",
+		"year": 2020
+	},
+	{
+		"name": "Halloweenie III: Seven Days",
+		"year": 2020
+	},
+	{
+		"name": "AYA",
+		"year": 2020
+	}
+]
+#### Response Data Example: 
+[
+    {
+        "artists": "['Vance Joy']",
+        "id": "7oekneJCJO74ycdLzdk16v",
+        "name": "Lay It on Me",
+        "year": 2018
+    },
+    {
+        "artists": "['Surfaces']",
+        "id": "5Pgq1Gfeth2CuUhyCXwlfC",
+        "name": "Take It Easy",
+        "year": 2020
+    },
+    {
+        "artists": "['EVERGLOW']",
+        "id": "06Pvy98db25O7wlfFFFIRM",
+        "name": "Bon Bon Chocolat",
+        "year": 2019
+    },
+    {
+        "artists": "['NOTD', 'Bea Miller']",
+        "id": "18W92Zm1KjLCbUIszOhpkD",
+        "name": "I Wanna Know (feat. Bea Miller)",
+        "year": 2018
+    },
+    {
+        "artists": "['Moguai', 'Cheat Codes']",
+        "id": "0XnHIhm9ppEHHDSRESdEcV",
+        "name": "Hold On (feat. Cheat Codes) - Radio Edit",
+        "year": 2015
+    },
+    {
+        "artists": "['Lee Brice']",
+        "id": "1ATvZTCBsBo7tL6YwHUc1m",
+        "name": "Don't Need No Reason",
+        "year": 2020
+    },
+    {
+        "artists": "['James Bay']",
+        "id": "7tmtOEDxPN7CWaQWBsG1DY",
+        "name": "Hold Back The River",
+        "year": 2014
+    },
+    {
+        "artists": "['Katy Perry']",
+        "id": "02FaKXXL7KUtRc7K0k54tL",
+        "name": "Cozy Little Christmas",
+        "year": 2018
+    },
+    {
+        "artists": "['EXO']",
+        "id": "7GbUWl6qLW1gdngbEV2WDJ",
+        "name": "Monster",
+        "year": 2016
+    },
+    {
+        "artists": "['Usher']",
+        "id": "7beY8mXJuC4l0J2WgVoCfm",
+        "name": "Bad Habits",
+        "year": 2020
+    }
+]                                     
